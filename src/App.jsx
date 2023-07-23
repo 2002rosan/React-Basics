@@ -50,11 +50,18 @@ const App = () => {
   return (
     <>
       {datas.map((data) => (
-        <>
+        <div
+          style={{
+            display: "flex",
+            items: "center",
+            flexDirection: "column",
+          }}
+          key={data.id}
+        >
           <h1 key={data.id}>{data.title}</h1>
-          <h1 key={data.id}>{data.description}</h1>
-          <img src={data.avatar} alt="" />
-        </>
+          <p key={data.id}>{data.description}</p>
+          <img src={data.avatar} alt="" height={500} width={500} />
+        </div>
       ))}
     </>
   );
