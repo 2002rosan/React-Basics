@@ -2,7 +2,6 @@ import { useState } from "react";
 import BlogList from "./list";
 
 const WorkingLists = () => {
-  // eslint-disable-next-line no-unused-vars
   const [lists, setlists] = useState([
     {
       id: 1,
