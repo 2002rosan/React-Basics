@@ -3,8 +3,11 @@
 import AxiosPractice from "./API/AxiosPractice";
 // eslint-disable-next-line no-unused-vars
 import Controlled from "./Controlled";
+import WorkingLists from "./Lists/WorkingLists";
 // eslint-disable-next-line no-unused-vars
 import UseEffect from "./UseEffect";
+// import ComponentA from "./context/ComponentA";
+// import { UserProvider } from "./context/UserContext";
 // import Counter from "./Counter";
 
 const App = () => {
@@ -14,7 +17,11 @@ const App = () => {
       {/* <Counter /> */}
       {/* <Controlled /> */}
       {/* <UseEffect /> */}
-      <AxiosPractice />
+      {/* <AxiosPractice /> */}
+      {/* <UserProvider value="Rosan">
+        <ComponentA />
+      </UserProvider> */}
+      <WorkingLists />
     </div>
   );
 };
