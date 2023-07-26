@@ -1,28 +1,22 @@
-// import APIFetch from "./APIFetch";
-// eslint-disable-next-line no-unused-vars
-import AxiosPractice from "./API/AxiosPractice";
-// eslint-disable-next-line no-unused-vars
-import Controlled from "./Controlled";
-import WorkingLists from "./Lists/WorkingLists";
-// eslint-disable-next-line no-unused-vars
-import UseEffect from "./UseEffect";
-// import ComponentA from "./context/ComponentA";
-// import { UserProvider } from "./context/UserContext";
-// import Counter from "./Counter";
+import { CssBaseline, Grid } from "@mui/material";
+import Header from "./components/Header/Header";
+import List from "./components/List/List";
+import Map from "./components/Map/Map";
 
 const App = () => {
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
-      {/* <APIFetch /> */}
-      {/* <Counter /> */}
-      {/* <Controlled /> */}
-      {/* <UseEffect /> */}
-      {/* <AxiosPractice /> */}
-      {/* <UserProvider value="Rosan">
-        <ComponentA />
-      </UserProvider> */}
-      <WorkingLists />
-    </div>
+    <>
+      <CssBaseline />
+      <Header />
+      <Grid container spacing={4} style={{ width: "100%" }}>
+        <Grid item xs={12} md={4}>
+          <List />
+        </Grid>
+        <Grid item xs={12} md={8}>
+          <Map />
+        </Grid>
+      </Grid>
+    </>
   );
 };
 
