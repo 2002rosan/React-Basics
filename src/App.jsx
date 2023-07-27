@@ -1,9 +1,11 @@
 import Crud from "./CRUD/Crud";
+import CatApi from "./CatAPI/CatApi";
 
 const App = () => {
   return (
     <>
-      <Crud />
+      {/* <Crud /> */}
+      <CatApi />
     </>
   );
 };

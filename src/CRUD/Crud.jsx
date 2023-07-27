@@ -12,6 +12,13 @@ const Crud = () => {
     setAddTask(TaskList);
   };
 
+  const handleDelete = (NewTask) => {
+    const newTodoList = addTask.filter((Task) => {
+      return Task !== NewTask;
+    });
+    setAddTask(newTodoList);
+  };
+
   return (
     <div
       style={{
@@ -29,9 +36,12 @@ const Crud = () => {
         <div>
           {addTask.map((Task, idx) => {
             return (
-              <h1>
-                {idx + 1}. {Task}
-              </h1>
+              <div>
+                <h1>
+                  {idx + 1}. {Task}
+                </h1>
+                <button onClick={() => handleDelete(Task)}>Delete</button>
+              </div>
             );
           })}
         </div>
